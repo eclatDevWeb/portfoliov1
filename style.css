@@ -36,19 +36,23 @@ h4 {
     font-weight: normal;
 }
 /* header */
+
 #bienvenue {
    background: #0a0a0a;
     color: #efefef; 
+    
     
 }
 #flex-header {
     display: flex;
     justify-content: space-between;
+    font-size: 1.5em;
     padding-top: 0.8rem;
+    margin-bottom: 12rem;
 }
 #flex-header span,
 footer span {
-    padding-left: 10%;
+    padding-left: 4rem;
 }
 #flex-header ul {
     margin: 0;
@@ -64,14 +68,11 @@ footer span {
 }
 /* presentation */
 #flex-presentation {
-    padding:6rem 0;
+    padding-bottom: 20rem;
     display: flex;
     justify-content: center;
     align-items: center;
-   
-    
-    
-    gap: 0.2rem;
+    gap: 5rem;
 
 }
 
@@ -81,8 +82,11 @@ footer span {
     
     
 }
+#gauche-presentation h1 {
+    margin-bottom: 1rem;
+}
 #gauche-presentation p {
-    font-size: 0.9em;
+    font-size: 1em;
     margin-top: 0;
 }
 
@@ -175,7 +179,9 @@ a:hover {
     }
 }
 @media all and (max-width:730px) {
-   
+   #flex-header {
+    margin-bottom: 0;
+   }
     #flex-presentation {
         padding:2rem 0 4rem 0;
         
@@ -183,8 +189,17 @@ a:hover {
     
 }
 @media all and (max-width:600px) {
+    #flex-header {
+        margin-bottom: 1rem;
+        font-size: 1em;
+    }
     #flex-presentation {
         flex-wrap: wrap-reverse;
+        gap:0;
+    }
+    #droite-presentation,
+    #gauche-presentation {
+        width: 70%;
     }
     #grille {
         grid-template-columns: 1fr;
@@ -208,18 +223,18 @@ a:hover {
     }
     #jump-start-title {
         display: flex;
-        
+        margin-left: 1rem;
         
         gap: 0.5rem;
-        align-items: center;
+        align-items: flex-start;
         
-        width:90%;
+        width:95%;
     }
     #jump-start-title h1 {
         margin: 0;
     }
     #jump-start-title p {
         font-size: 0.9em;
-        padding-right: 1rem;
+        
     }
 }
