@@ -1,0 +1,222 @@
+@import url('https://fonts.googleapis.com/css2?family=Alkalami&family=Roboto:wght@100;300;400;700&display=swap');
+* {
+    box-sizing: border-box;
+}
+html {
+    height: 100%;
+}
+body {
+    height:100%;
+    margin:0;
+    font-family: 'roboto', 'sans-serif';
+    display: flex;
+    flex-direction: column;
+}
+img {
+    height: auto;
+    width: 100%;
+    max-width: 100%;
+    display: block;
+}
+a {
+    text-decoration: none;
+    color: inherit;
+}
+h1 {
+    font-size: 2em;
+    margin-bottom: 0;
+}
+h3,h4 {
+    text-align: center;
+}
+h3 {
+    padding-top: 1rem;
+}
+h4 {
+    font-weight: normal;
+}
+/* header */
+#bienvenue {
+   background: #0a0a0a;
+    color: #efefef; 
+}
+#flex-header {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 0.8rem;
+}
+#flex-header span,
+footer span {
+    padding-left: 10%;
+}
+#flex-header ul {
+    margin: 0;
+    padding-right: 4rem;
+}
+#flex-header li {
+    display: inline-block;
+    padding-left: 0.5rem;
+}
+.container80 {
+    width: 80%;
+    margin: 0 auto; 
+}
+/* presentation */
+#flex-presentation {
+    padding:10rem 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    
+    
+    gap: 0.1rem;
+
+}
+
+#gauche-presentation {
+    width:60%;
+    text-align: justify;
+    
+    
+}
+#gauche-presentation p {
+    font-size: 0.9em;
+    margin-top: 0;
+}
+
+#droite-presentation {
+    width: 40%;
+    
+}
+/* projets */
+#grille {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr) ;
+    
+    gap: 0.8rem;
+}
+#grille span {
+    position: absolute;
+    place-self:center start;
+    color: #efefef;
+    font-weight: bold;
+    padding-left: 1rem;
+    z-index: 1;
+}
+.sous-grille {
+    display: grid;
+    height: 120px;
+    min-width: 215px;
+    overflow: hidden;
+    border-radius: 0.2rem ;
+    
+    
+}
+
+#contact {
+    text-align: center;
+}
+#contact a {
+    display: inline-block;
+    margin-bottom: 5rem;
+    background-color: #0a0a0a;
+    color: #efefef;
+    font-size: 0.8em;
+    padding: 1% 2%;
+}
+footer {
+    border-top: 0.1em solid #0a0a0a ;
+    padding:1rem 0;
+}
+a:hover {
+    color: orange;
+}
+.sous-grille img:hover {
+    opacity: 0.7;
+}
+/* page jump start */
+#jump-start {
+    background: url(image/jump-start.png);
+    background-position: center;
+    background-size: cover;
+    color: #efefef;
+    
+    
+    
+}
+.header2 {
+    position: absolute;
+    width: 100%;
+    z-index: 2;
+}
+#jump-start-title {
+    margin: 20% 10%;
+    width: 40%;
+    z-index: 2;
+    position: absolute;
+    
+}
+#filtre img {
+    position: absolute;
+    z-index: 1;
+    
+}
+#lipsum {
+    flex-grow: 1;
+    margin-top: 10vh;
+    text-align: justify;
+    
+}
+@media all and (max-width:1130px) {
+    #grille {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+@media all and (max-width:730px) {
+    #grille {
+        grid-template-columns: 1fr;
+    }
+    #flex-presentation {
+        flex-wrap: wrap-reverse;
+        
+    }
+    #gauche-presentation,
+    #droite-presentation {
+        width: 80%;
+    }
+}
+@media all and (max-width:600px) {
+    
+    .container80 {
+        width: 95%;
+    }
+    #flex-header {
+        padding: 0.8rem 1rem 0 1rem;
+    }
+    #flex-header span {
+       padding-left: 0;
+        
+    }
+    #flex-header ul {
+        padding-right: 0;
+        text-align: right;
+        
+
+    }
+    #jump-start-title {
+        display: flex;
+        
+        
+        gap: 0.5rem;
+        align-items: center;
+        margin: 4rem 1rem 0 1rem;
+        width:100%;
+    }
+    #jump-start-title h1 {
+        margin: 0;
+    }
+    #jump-start-title p {
+        font-size: 0.9em;
+    }
+}
