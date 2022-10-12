@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta property="og:title" content="Mon portfolio v1" />
+    <meta
+      property="og:description"
+      content="Retrouver mon portfolio réalisé dans le cadre de ma reconversion dans le web"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="shortcut icon" href="image/favicon.png" />
+    <title>Aurelien Gallea | Portfolio v.1</title>
+  </head>
+  <body>
+    <section>
+        <header>
+            <div id="flex-header">
+                <span>Aurelien Gallea</span>
+                <nav>
+                <ul>
+                    <li><a href="#"> Accueil</a></li>
+                    <li><a href="mailto:gallea.a@gmail.com?subject=demande de renseignements&body=je vous contacte car je souhaite realiser :">Contactez-moi</a></li>
+                </ul>
+                </nav>
+            </div>
+        </header>
+    </section>
+    <section class="container-IMC">
+      <h3>Calculateur d'IMC</h3>
+      <form id="imc">
+        <label for="heightIMC">Votre taille en cm</label>
+        <input
+          type="number"
+          class="heightBMI"
+          placeholder="entrez votre taille en cm"
+        />
+        <label for="weight">Votre poids en kg (un nombre entier)</label>
+        <input
+          type="number"
+          class="weightBMI"
+          placeholder="entrez votre poids en kg"
+        />
+        <button class="validate">Valider les infos</button>
+      </form>
+      <div class="result">
+        <p class="resultNumber">0</p>
+      </div>
+    </section>
+   
+    <section id="contact">
+      <h3>Contact</h3>
+      <h4>Alors on travaille ensemble ?</h4>
+      <a href="mailto:gallea.a@gmail.com?subject=prise de contact&body=je vous contacte">Envoyer un email</a>
+  </section>
+  <footer >
+      <span>2022 © Aurelien Gallea</span>
+  </footer>
+    <script src="imc.js"></script>
+  </body>
+</html>
