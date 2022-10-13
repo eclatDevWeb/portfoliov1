@@ -1,0 +1,272 @@
+@import url('https://fonts.googleapis.com/css2?family=Alkalami&family=Roboto:wght@100;300;400;700&display=swap');
+* {
+    box-sizing: border-box;
+}
+html {
+    height: 100%;
+}
+body {
+    height:100%;
+    margin:0;
+    font-family: 'roboto', 'sans-serif';
+    display: flex;
+    flex-direction: column;
+}
+img {
+    height: auto;
+    width: 100%;
+    max-width: 100%;
+    display: block;
+}
+a {
+    text-decoration: none;
+    color: inherit;
+}
+h1 {
+    font-size: 2em;
+    margin-bottom: 0;
+}
+h3,h4 {
+    text-align: center;
+}
+h3 {
+    padding-top: 1rem;
+}
+h4 {
+    font-weight: normal;
+}
+/* header */
+
+#bienvenue {
+   background: #0a0a0a;
+    color: #efefef; 
+    
+    
+}
+#flex-header {
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.5em;
+    padding-top: 0.8rem;
+    margin-bottom: 12rem;
+}
+#flex-header span,
+footer span {
+    padding-left: 4rem;
+}
+#flex-header ul {
+    margin: 0;
+    padding-right: 4rem;
+}
+#flex-header li {
+    display: inline-block;
+    padding-left: 0.5rem;
+}
+.container80 {
+    width: 80%;
+    margin: 0 auto; 
+}
+/* presentation */
+#flex-presentation {
+    padding-bottom: 20rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5rem;
+
+}
+
+#gauche-presentation {
+    width:60%;
+    text-align: justify;
+    
+    
+}
+#gauche-presentation h1 {
+    margin-bottom: 1rem;
+}
+#gauche-presentation p {
+    font-size: 1em;
+    margin-top: 0;
+}
+
+#droite-presentation {
+    width: 40%;
+    
+}
+/* projets */
+#grille {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr) ;
+    
+    gap: 0.8rem;
+}
+#grille span {
+    position: absolute;
+    place-self:center start;
+    color: #efefef;
+    font-weight: bold;
+    padding-left: 1rem;
+    z-index: 1;
+}
+.sous-grille {
+    display: grid;
+    height: 120px;
+    min-width: 215px;
+    overflow: hidden;
+    border-radius: 0.2rem ;
+    
+    
+}
+
+#contact {
+    text-align: center;
+}
+#contact a {
+    display: inline-block;
+    margin-bottom: 5rem;
+    background-color: #0a0a0a;
+    color: #efefef;
+    font-size: 0.8em;
+    padding: 1% 2%;
+}
+footer {
+    border-top: 0.1em solid #0a0a0a ;
+    padding:1rem 0;
+}
+a:hover {
+    color: orange;
+}
+.sous-grille img:hover {
+    opacity: 0.7;
+}
+/* page jump start */
+#jump-start {
+    background: url(image/jump-start.png);
+    background-position: center;
+    background-size: cover;
+    color: #efefef;
+    
+    
+    
+}
+.header2 {
+    position: absolute;
+    width: 100%;
+    z-index: 2;
+}
+#jump-start-title {
+    margin: 20% 10%;
+    width: 40%;
+    z-index: 2;
+    position: absolute;
+    
+}
+#filtre img {
+    position: absolute;
+    z-index: 1;
+    
+}
+#lipsum {
+    flex-grow: 1;
+    margin-top: 10vh;
+    text-align: justify;
+    
+}
+/* page IMC */
+.container-IMC {
+    width: 80%;
+    
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-grow: 1;
+    background: rgb(55, 177, 101);
+    border-radius: 30px;
+}
+#imc {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#imc input {
+    border-radius: 10px;
+    margin: 1rem 0;
+    
+}
+#imc button {
+    border-radius: 10px;
+    padding: 2% 4%;
+    font-size: 1.2em;
+    background-color: rgb(120, 214, 218);
+
+}
+
+@media all and (max-width:1130px) {
+    #grille {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+@media all and (max-width:730px) {
+   #flex-header {
+    margin-bottom: 0;
+   }
+    #flex-presentation {
+        padding:2rem 0 4rem 0;
+        
+    }
+    
+}
+@media all and (max-width:600px) {
+    #flex-header {
+        margin-bottom: 1rem;
+        font-size: 1em;
+    }
+    #flex-presentation {
+        flex-wrap: wrap-reverse;
+        gap:0;
+    }
+    #droite-presentation,
+    #gauche-presentation {
+        width: 70%;
+    }
+    #grille {
+        grid-template-columns: 1fr;
+    }
+    .container80 {
+        width: 95%;
+        margin: 0 auto;
+    }
+    #flex-header {
+        padding: 0.8rem 1rem 0 1rem;
+    }
+    #flex-header span {
+       padding-left: 0;
+        
+    }
+    #flex-header ul {
+        padding-right: 0;
+        text-align: right;
+        
+
+    }
+    #jump-start-title {
+        display: flex;
+        margin-left: 1rem;
+        
+        gap: 0.5rem;
+        align-items: flex-start;
+        
+        width:95%;
+    }
+    #jump-start-title h1 {
+        margin: 0;
+    }
+    #jump-start-title p {
+        font-size: 0.9em;
+        
+    }
+}
