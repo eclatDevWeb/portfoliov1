@@ -237,6 +237,7 @@ a:hover {
    }
     #flex-presentation {
         padding:2rem 0 4rem 0;
+        margin-top:0;
         
     }
     .container-IMC {
@@ -253,6 +254,7 @@ a:hover {
     #flex-presentation {
         flex-wrap: wrap-reverse;
         gap:0;
+        margin-top:10rem;
     }
     #droite-presentation,
     #gauche-presentation {
