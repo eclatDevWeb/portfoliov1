@@ -198,7 +198,7 @@ a:hover {
 .container-IMC {
     
     
-    margin: 0 auto;
+    margin: 5rem auto 0 auto;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -230,6 +230,7 @@ a:hover {
 .result {
     font-size: 1.5em;
 }
+
 @media all and (max-width:1130px) {
     #grille {
         grid-template-columns: 1fr 1fr;
@@ -246,7 +247,6 @@ a:hover {
     }
     .container-IMC {
         width: 100%;
-        margin-top: 5rem;
         border-radius: 0;   
      }
 }
