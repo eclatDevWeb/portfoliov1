@@ -141,7 +141,11 @@ footer span {
     background-size: cover;
 }
 #projet-4 {
-    background: center url(image/dannyWeb.png);
+    background: center url(image/meteo.jpg);
+    background-size: cover;
+}
+#projet-5 {
+    background: center  url(image/dannyWeb.png);
     background-size: cover;
 }
 #contact {
