@@ -32,7 +32,9 @@ if('geolocation' in navigator) {
     var options = {
     enableHighAccuracy: true
     }
-} else {
+}
+
+else {
     villeChoisie = 'Paris';
     recevoirTemperature(villeChoisie);
 }
@@ -44,13 +46,14 @@ changerDeVille.addEventListener('click', () => {
   villeChoisie = prompt('Quelle ville souhaitez-vous voir ?');
   recevoirTemperature(villeChoisie);
 });
+
 function erreur() {
     villeChoisie = "Paris";
     recevoirTemperature(villeChoisie);
 }
 
 function recevoirTemperature(ville) {
-  const url = 'https://api.openweathermap.org/data/2.5/weather?q=montpellier&appid=253664b278f0a6f775da23d9d38db076&units=metric';
+  const url = 'https://api.openweathermap.org/data/2.5/weather?q='+ ville + '&appid=253664b278f0a6f775da23d9d38db076&units=metric';
 
   let requete = new XMLHttpRequest(); // Nous créons un objet qui nous permettra de faire des requêtes
   requete.open('GET', url); // Nous récupérons juste des données
@@ -70,7 +73,7 @@ function recevoirTemperature(ville) {
         document.querySelector('#ville').textContent = ville;
       }
       else {
-        alert('Un problème est intervenu, merci de revenir plus tard.');
+        // alert('Un problème est intervenu, merci de revenir plus tard.');
       }
     }
   }
