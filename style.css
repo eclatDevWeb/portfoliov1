@@ -112,9 +112,13 @@ footer span {
 }
 
 #grille h4 {
-    color: rgb(255, 124, 47); 
+    color: rgb(0, 0, 0); 
     text-align: left;
-    padding-left: 1rem;
+    background-color: #efefef;
+    display: inline-block;
+    margin-left: 1rem;
+    padding: 0.4rem;
+    border-radius: 0.3rem;
     font-size: 1.2em;
     text-shadow: 1px -1px 2px rgb(252, 251, 251);
     
@@ -129,23 +133,24 @@ footer span {
     
 }
 #projet-1 {
-    background:center url(image/jump-start.png);
-    background-size: cover;
+    background: center url(image/pendu.png);
+    background-size: cover ;
 }
 #projet-2 {
     background: center url(image/bmi.jpg);
     background-size: cover;
 }
 #projet-3 {
-    background: url(image/gofastnews-vignette.png);
+    background: url(image/appel-de-l-hiver.png);
     background-size: cover;
+    
 }
 #projet-4 {
     background: center url(image/meteo.jpg);
     background-size: cover;
 }
 #projet-5 {
-    background: center  url(image/dannyWeb.png);
+    background:center url(image/gofastnews-vignette.png);
     background-size: cover;
 }
 #contact {
